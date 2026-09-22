@@ -1,4 +1,6 @@
 # discourse-yuml
+
+EthDevOps fork of [sekhat/discourse-yuml](https://github.com/sekhat/discourse-yuml), kept compatible with current Discourse releases (2026.x). Changes from upstream: markdown extension renamed from `.js.es6` to `.js`, deprecated `helper.whiteList` replaced with `helper.allowList`.
 Add ability to write yUML class diagrams directly into a discourse post.
 
 ![Example of yUML diagram in discourse](https://raw.githubusercontent.com/sekhat/discourse-yuml/master/docs/Example.png)
@@ -17,7 +19,7 @@ hooks:
         cmd:
           - mkdir -p plugins
           - git clone https://github.com/discourse/docker_manager.git
-          - git clone https://github.com/sekhat/discourse-yuml.git
+          - git clone https://github.com/EthDevOps/discourse-yuml.git
 ```
 
 and rebuild docker via
@@ -32,7 +34,7 @@ cd /var/discourse
 From your main discourse do:
 
     cd plugins
-    git clone https://github.com/sekhat/discourse-yuml.git
+    git clone https://github.com/EthDevOps/discourse-yuml.git
     cd ..
 
 ### Rebake Posts
